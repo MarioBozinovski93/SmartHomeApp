@@ -1,0 +1,41 @@
+<ion-header>
+    <ion-navbar color="secondary">
+      <ion-title>
+        Create USER 
+      </ion-title>
+    </ion-navbar>
+  </ion-header >
+  
+  <ion-content  padding>
+
+        <form [formGroup]="loginForm" text-center>
+        <ion-list class="login-form">
+                <ion-item class="custom-input">
+                        <ion-label floating text-center>
+                                <ion-icon ios="ios-person" md="md-person"></ion-icon> &nbsp; Username</ion-label>
+                        <ion-input text-center type="text" formControlName="username"  name="username"[(ngModel)]="createuser.username"></ion-input>
+                </ion-item>
+                <ion-item class="custom-input">
+                        <ion-label floating text-center>
+                                <ion-icon ios="ios-person" md="md-person"></ion-icon> &nbsp; Password</ion-label>
+                        <ion-input text-center type="text" formControlName="password" name="password"[(ngModel)]="createuser.password"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label>Role</ion-label>
+                    <ion-select formControlName="role"  name="role"[(ngModel)]="createuser.role">
+                      <ion-option value="1">SuperAdmin</ion-option>
+                      <ion-option value="2">Admin</ion-option>
+                      <ion-option value="3" [selected]="true">User</ion-option>
+                    </ion-select>
+                  </ion-item>
+        </ion-list>
+        <ion-buttons text-center>
+            <p></p>
+                <button ion-button class="login-btn" color="secondary" (click)="create()">CREATE</button>
+            <p></p>
+                <button ion-button class="login-btn" color="dark" (click)="getback()">back</button>
+                  
+            </ion-buttons>
+        </form>
+  </ion-content>
+  

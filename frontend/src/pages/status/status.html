@@ -1,0 +1,55 @@
+<ion-header>
+        <ion-navbar color="secondary">
+          <ion-title>
+          Status Page
+          </ion-title>
+        </ion-navbar>
+      </ion-header >
+      <ion-list>
+
+       
+      
+      </ion-list>
+      <ion-content padding>
+          <ion-item>
+              <ion-label>Device 1</ion-label>
+              <ion-toggle [(ngModel)]="Device1"  disabled="true"></ion-toggle>
+            </ion-item>
+          
+            <ion-item>
+              <ion-label>Device 2</ion-label>
+              <ion-toggle [(ngModel)]="Device2" disabled="true"></ion-toggle>
+            </ion-item>
+          
+            <ion-item>
+              <ion-label>Device 3</ion-label>
+              <ion-toggle [(ngModel)]="Device3" disabled="true"></ion-toggle>
+            </ion-item>
+            <ion-item>
+              <ion-label>Device 4</ion-label>
+              <ion-toggle [(ngModel)]="status.Device4"  (ionChange)="turnOnOff()"  ></ion-toggle>
+            </ion-item>
+          
+            <ion-item>
+              <ion-label>Device 5</ion-label>
+              <ion-toggle [(ngModel)]="Device5" disabled="true"></ion-toggle>
+            </ion-item>
+          
+            <ion-item>
+              <ion-label>Device 6</ion-label>
+              <ion-toggle [(ngModel)]="Device6" disabled="true"></ion-toggle>
+            </ion-item>
+            <ion-item>
+              <ion-label>Device 7</ion-label>
+              <ion-toggle [(ngModel)]="Device7" disabled="true"></ion-toggle>
+            </ion-item>
+          
+            <ion-item>
+              <ion-label>Device 8</ion-label>
+              <ion-toggle [(ngModel)]="Device8" disabled="true"></ion-toggle>
+            </ion-item>
+            <p></p>
+            <ion-buttons text-center>
+          <button ion-button   color="dark" (click)="getBack()">Back</button>
+          </ion-buttons>
+      </ion-content>

@@ -1,0 +1,35 @@
+<ion-header>
+    <ion-navbar color="secondary">
+      <ion-title>
+        Login Page
+      </ion-title>
+    </ion-navbar>
+  </ion-header >
+  
+  <ion-content  padding>
+
+        <form [formGroup]="loginForm" text-center>
+        <ion-list class="login-form">
+                <ion-item class="custom-input">
+                        <ion-label floating text-center>
+                                <ion-icon ios="ios-person" md="md-person"></ion-icon> &nbsp; Username</ion-label>
+                        <ion-input text-center type="text" formControlName="username"  name="username"[(ngModel)]="login.username"></ion-input>
+                </ion-item>
+                <ion-item class="custom-input">
+                        <ion-label floating text-center>
+                                <ion-icon ios="ios-person" md="md-person"></ion-icon> &nbsp; Password</ion-label>
+                        <ion-input text-center type="text" formControlName="password" name="password"[(ngModel)]="login.password"></ion-input>
+                </ion-item>
+        </ion-list>
+        <ion-buttons text-center>
+            <p></p>
+                <button ion-button class="login-btn" color="secondary" (click)="getUser()">LOGIN</button>
+                
+                <p (mousedown)="forgotPassword()"><a href="#">Forgot password?</a><p>
+                        <p (mousedown)="createUser()"><a href="#">Create New User</a><p>
+            </ion-buttons>
+        </form>
+      
+        
+  </ion-content>
+  

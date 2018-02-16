@@ -1,0 +1,14 @@
+{
+  "name": "frontend_dipl",
+  "app_id": "813258d5",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  },
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://192.168.1.100:8080"
+    }
+  ]
+}
