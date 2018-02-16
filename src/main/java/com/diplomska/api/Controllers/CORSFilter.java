@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author Mario-HP
+ * @author Mario HP
  */
 public class CORSFilter implements Filter {
 
